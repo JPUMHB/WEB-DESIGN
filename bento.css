@@ -1,0 +1,185 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Soft light background for a clean look */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    color: #2d3436; /* Darker tone for header text */
+    font-weight: bold;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1abc9c; /* Teal color for BentoBox theme */
+    color: #fff;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-bottom: 5px solid #16a085;
+  }
+  
+  header h1 {
+    font-size: 2.8rem;
+    font-family: 'Tahoma', sans-serif;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #2c3e50;
+  }
+  
+  /* Main Section */
+  main {
+    padding: 3rem 2rem;
+  }
+  
+  /* Intro Section */
+  .intro {
+    background-color: #ecf0f1; /* Light gray background */
+    padding: 2rem;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+  }
+  
+  .intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #16a085;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Menu Section */
+  .menu {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .bento-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bento-box:hover {
+    transform: translateY(-10px); /* Subtle hover effect */
+  }
+  
+  .bento-box h3 {
+    font-size: 1.8rem;
+    color: #16a085;
+    margin-bottom: 1rem;
+  }
+  
+  .bento-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .bento-box ul li {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #ecf0f1;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1abc9c;
+    color: #fff;
+    border-top: 5px solid #16a085;
+  }
+  
+  footer p {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bento-box {
+      width: 80%;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    .intro h2 {
+      font-size: 2rem;
+    }
+  
+    .bento-box h3 {
+      font-size: 1.6rem;
+    }
+  
+    footer p {
+      font-size: 0.9rem;
+    }
+  }
+  
